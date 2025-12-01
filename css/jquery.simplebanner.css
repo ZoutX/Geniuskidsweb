@@ -1,0 +1,85 @@
+.simpleBanner {overflow:hidden;position:relative;width:960px;padding:0 0 26px 0;margin-bottom: 30px;}
+.simpleBanner h2 {
+	padding-left: 50px;
+}
+.simpleBanner.hiddenArrows .bannerControlsWpr,
+.simpleBanner.hiddenIndicators .bannerIndicators {display:none;}
+
+.simpleBanner ul {list-style:none;margin:0;padding:0;}
+.simpleBanner .bannerListWpr {clear:both;overflow:hidden;}
+.simpleBanner .bannerListWpr ul {width:50000px;overflow:hidden;}
+.simpleBanner .bannerListWpr ul li {float:left;width:960px;}
+.simpleBanner .bannerListWpr ul li img {display: inline-block;}
+.simpleBanner .bannerControlsWpr {cursor:pointer;padding:10px 12px;position:absolute;top:50%;margin-top: -15px;}
+.simpleBanner .bannerControlsWpr:hover svg {
+	fill: #FF7E00;
+}
+.simpleBanner .bannerControlsWpr svg {
+	width: 50px;
+	height: 50px;
+	fill: #333;
+}
+.simpleBanner .bannerControlsPrev {border-radius:0 5px 5px 0;left:-10px;padding-left:5px;}
+.simpleBanner .bannerControlsNext {border-radius:5px 0 0 5px;right:-10px;padding-right:5px;}
+.simpleBanner .bannerControlsPrev .bannerControls {border-color: transparent #3f3f3f transparent transparent;border-width:20px 20px 20px 0;}
+.simpleBanner .bannerControlsNext .bannerControls {border-color: transparent transparent transparent #3f3f3f;border-width:20px 0 20px 20px;}
+.simpleBanner .bannerControlsPrev:hover .bannerControls {border-color:transparent #FFF transparent transparent;}
+.simpleBanner .bannerControlsNext:hover .bannerControls {border-color:transparent transparent transparent #FFF;}
+.simpleBanner .bannerControls {width:0;height:0;border-style:solid;}
+.simpleBanner .bannerIndicators {background:transparent;text-align:center;right:50%;width: 200px;margin-right: -100px;opacity:0.9;padding:4px 8px 4px 0;position:absolute;bottom:-0px;}
+.simpleBanner .bannerIndicators ul {overflow:hidden;}
+.simpleBanner .bannerIndicators .bannerIndicator {background:#5D5D5D;border-radius:7px 7px 7px 7px;cursor:pointer;display:inline-block;height:15px;margin-left:8px;width:15px;}
+.simpleBanner .bannerIndicators .bannerIndicator:hover {background:#FFF;}
+.simpleBanner .bannerIndicators .bannerIndicator.current {background:#FF7E00;cursor:default;}
+.bannerList div {
+	width: 916px;
+	padding: 0 22px;
+}
+.bannerList li > div > div {
+	width: 290px;
+	height: 192px;
+	display: inline-block;
+	padding: 0;
+	margin: 6px;
+	text-align: center;
+}
+.bannerList img {
+	height: 192px;
+	max-width: 290px;
+}
+.simpleBanner .bannerControlsPrev, .simpleBanner .bannerControlsNext {
+	height: 40px;
+}
+@media  (max-width: 960px) {
+	.simpleBanner {
+		width: 100%;
+	}
+	.bannerList li > div {
+		width: auto;
+		padding: 0;
+	}
+	.bannerList img {
+		max-height: 75px;
+		vertical-align: middle;
+	}
+	.simpleBanner .bannerControlsPrev {left:-20px;}
+	.simpleBanner .bannerControlsNext {right:-20px;}
+	.simpleBanner .bannerListWpr ul li {width: 30%;}
+	.bannerList li > div {
+		padding: 0 16px;
+	}
+	.simpleBanner h2 {
+		padding-left: 0;
+	}
+	.bannerList li > div > div {
+		width: 30%;
+		height: auto;
+		display: inline-block;
+		padding: 0;
+		margin: 0 1.2% 4px;
+		text-align: center;
+	}
+	.bannerList li > div > div img {
+		width: 100%;
+	}
+}
